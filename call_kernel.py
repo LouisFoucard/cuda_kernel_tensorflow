@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 import time
 
-mod = tf.load_op_library('./matmul_smem_kernel.so')
+mod = tf.load_op_library('bin/matmul_smem_kernel.so')
 
 MATRIX_SIZE = (16000, 16000)
 
